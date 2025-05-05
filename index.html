@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数据集申请</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white shadow-md rounded-2xl p-8 w-full max-w-xl">
+    <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">📂 数据集申请表</h1>
+
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <!-- 防垃圾设置 -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="新的数据集申请表单">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://yourusername.github.io/dataset-apply/thanks.html">
+
+      <label class="block mb-4">
+        <span class="text-gray-700">姓名</span>
+        <input name="姓名" type="text" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+      </label>
+
+      <label class="block mb-4">
+        <span class="text-gray-700">邮箱</span>
+        <input name="邮箱" type="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+      </label>
+
+      <label class="block mb-4">
+        <span class="text-gray-700">所属机构</span>
+        <input name="机构" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+      </label>
+
+      <label class="block mb-4">
+        <span class="text-gray-700">研究目的 / 使用说明</span>
+        <textarea name="使用说明" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm"></textarea>
+      </label>
+
+      <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition">
+        提交申请
+      </button>
+    </form>
+  </div>
+</body>
+</html>
