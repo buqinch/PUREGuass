@@ -2,13 +2,7 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>即将上线</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .blink {
-      animation: blink 1.5s infinite;
-    }
+
 
     @keyframes blink {
       0%, 100% { opacity: 1; }
